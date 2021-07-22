@@ -8,7 +8,6 @@ $(document).ready(function() {
       $('.header-nav').addClass('hidden')
    });
 
-   // $('.slider').slick();
 
    $(".slider").slick({
    dots: true,
@@ -23,8 +22,6 @@ $(document).ready(function() {
          slidesToShow: 1,
          slidesToScroll: 1,
          infinite: true,
-         
-         dots: true
          }
       },
       {
