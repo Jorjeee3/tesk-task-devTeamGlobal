@@ -196,8 +196,8 @@ body {
 .slider-item {
     width: 100%;
     margin: 0 auto 50px;
-    max-width: 500px;
-    height: 500px;
+    max-width: 400px;
+    height: 400px;
 }
 
 .slider-item:nth-child(2),
