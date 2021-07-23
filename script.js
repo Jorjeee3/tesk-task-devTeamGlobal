@@ -41,11 +41,3 @@ $(document).ready(function () {
    });
 })
 
-function showMore() {
-   const workItem = document.querySelectorAll('.work-item')
-   const workMore = document.querySelector('.work-more')
-
-   if (workItem[6,7,8]) {
-      workItem.classList.remove('.hidden-work-item')
-   }
-}
