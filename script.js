@@ -3,6 +3,7 @@ $(document).ready(function () {
    $('.header-burger').click(function (event) {
       $('.header-nav').removeClass('hidden');
       $("body").css("overflow", "hidden");
+      $("body").css("white-space", "nowrap");
    });
 
    $('.close-cross').click(function (event) {
