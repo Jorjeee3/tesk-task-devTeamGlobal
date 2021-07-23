@@ -1,37 +1,51 @@
 
-$(document).ready(function() {
+$(document).ready(function () {
    $('.header-burger').click(function (event) {
-      $('.header-nav').removeClass('hidden')
+      $('.header-nav').removeClass('hidden');
+      $("body").css("overflow", "hidden");
    });
 
    $('.close-cross').click(function (event) {
-      $('.header-nav').addClass('hidden')
+      $('.header-nav').addClass('hidden');
+      $("body").css("overflow", "auto");
    });
 
 
-   $(".slider").slick({
-   dots: true,
-   infinite: true,
-   speed: 300,
-   slidesToShow: 1,
-   slidesToScroll: 1,
-   responsive: [
-      {
-         breakpoint: 1024,
-         settings: {
-         slidesToShow: 1,
-         slidesToScroll: 1,
-         infinite: true,
+
+
+   $('.slider').slick({
+      dots: false,
+      infinite: true,
+      speed: 300,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false,
+      variableWidth: true,
+      responsive: [
+         {
+            breakpoint: 1024,
+            settings: {
+               slidesToShow: 1,
+               slidesToScroll: 1,
+               infinite: true,
+            }
+         },
+         {
+            breakpoint: 900,
+            settings: "unslick",
+            prevArrow: false,
+            nextArrow: false,
+            draggable: false
          }
-      },
-      {
-         breakpoint: 768,
-         settings: "unslick",
-         prevArrow: false,
-         nextArrow: false,
-         draggable: false
-      }
-   ]
+      ]
    });
 })
 
+function showMore() {
+   const workItem = document.querySelectorAll('.work-item')
+   const workMore = document.querySelector('.work-more')
+
+   if (workItem[6,7,8]) {
+      workItem.classList.remove('.hidden-work-item')
+   }
+}
