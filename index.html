@@ -9,6 +9,7 @@
         href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap"
         rel="stylesheet"
     >
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -90,7 +91,6 @@
                     </div>
                 </div>
 
-
                 <div class="spotlight-slider">
                     <div class="spotlight-list">
                         <div class="spotlight-item">
@@ -116,55 +116,6 @@
                         </div>
                     </div>
                 </div>
-
-
-
-                <!-- <div class="slider">
-                    <div class="slider-content">
-                        <div class="slider-item">
-                            <img
-                                src="images/spotlight-image.png"
-                                alt="digital-slider-image"
-                                class="slider-image"
-                            >
-                        </div>
-                        <div class="slider-item">
-                            <img
-                                src="images/spotlight-image.png"
-                                alt="digital-slider-image"
-                                class="slider-image"
-                            >
-                        </div>
-                        <div class="slider-item">
-                            <img
-                                src="images/spotlight-image.png"
-                                alt="digital-slider-image"
-                                class="slider-image"
-                            >
-                        </div>
-                        <div class="slider-item">
-                            <img
-                                src="images/spotlight-image.png"
-                                alt="digital-slider-image"
-                                class="slider-image"
-                            >
-                        </div>
-                        <div class="slider-item">
-                            <img
-                                src="images/spotlight-image.png"
-                                alt="digital-slider-image"
-                                class="slider-image"
-                            >
-                        </div>
-                        <div class="slider-item">
-                            <img
-                                src="images/spotlight-image.png"
-                                alt="digital-slider-image"
-                                class="slider-image"
-                            >
-                        </div>
-                    </div>
-                </div> -->
                 
             </div>
         </section>
@@ -179,15 +130,102 @@
                     <li class="work-item"></li>
                     <li class="work-item"></li>
                     <li class="work-item"></li>
-                    <li class="work-item hidden-work-item"></li>
-                    <li class="work-item hidden-work-item"></li>
-                    <li class="work-item hidden-work-item"></li>
                 </ul>
                 <button class="work-more">See More of These.</button>
             </div>
         </section>
+
+        <section class="contact-section">
+            <div class="contact-container">
+                <span class="section-name">contact us</span>
+                <h2 class="contact-title">Get in Touch</h2>
+                <form class="contact-form">
+
+                    <div class="label-input-wrapper">
+                        <div class="label-wrapper">
+                        <label for="name" class="contact-label">
+                        <input 
+                            type="email" 
+                            placeholder="Your email" 
+                            class="contact-input"
+                        >
+                        </label>
+                    </div>
+
+                    <div class="label-wrapper">
+                        <label for="text" class="contact-label">
+                        <input 
+                            type="text" 
+                            placeholder="Subject" 
+                            class="contact-input"
+                        >
+                        </label>
+                    </div>
+                    </div>
+
+                    <div class="label-wrapper-textarea">
+                        <label for="message" class="contact-label">
+                        <textarea
+                            name="message"
+                            placeholder="Message here..."
+                            class="contact-textarea"
+                        ></textarea>
+                    </label>
+                    </div>
+                    <button
+                        type="submit"
+                        class="contact-button"
+                    >
+                    Send message
+                    </button>
+                </form>
+            </div>
+        </section>
     </main>
 
+    <footer class="footer">
+        <div class="footer-container">
+            <div>
+                <span class="logo-name">doob</span>
+            </div>
+            <h2 class="footer-title">creativity above</h2>
+            <nav class="footer-nav">
+                <ul class="footer-list">
+                    <li class="footer-item">
+                        <a href="" class="footer-item-link">Home.</a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="" class="footer-item-link">About us.</a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="" class="footer-item-link">Portfolio.</a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="" class="footer-item-link">Blog.</a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="" class="footer-item-link">Contact us.</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="footer-year">
+                <small>
+                    © 2019 - Doob,All Right Reserved
+                </small>
+            </div>
+            <div class="social-icons-wrapper">
+                <a href="https://uk-ua.facebook.com/">
+                    <img src="icons/Facebook.svg" alt="facebook icon">
+                </a>
+                <a href="https://twitter.com/?lang=ru">
+                    <img src="icons/Twitter.svg" alt="twitter icon">
+                </a>
+                <a href="https://www.google.com/">
+                    <img src="icons/Dribble.svg" alt="dribble icon">
+                </a>
+            </div>
+        </div>
+    </footer>
 
 
 
@@ -198,9 +236,7 @@
 
 
 
-
-
-
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script 
     src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
